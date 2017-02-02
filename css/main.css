@@ -1,0 +1,42 @@
+  /* for Vertical form */
+  .main
+  {
+    max-width: 900px
+  }
+  .mathborder
+  {
+    width: 280px;
+    height: 123px;
+    float:left;
+    border: 1px solid #000000;
+    margin: 5px 5px 5px 5px;
+    padding: 0 5px 0 5px;
+  }
+  .mathq
+  {
+    border-bottom: thin solid #000000;
+    margin: 10px 80px 60px 80px;
+  }
+  .matht
+  {
+    width:100%;
+    font-size:20px;
+    border-width: thin;
+  }
+  .matht td
+  {
+    min-width: 15px;
+  }
+
+  /* For single Form*/
+  .singleItem
+  {
+    font-size:26px;
+    font-weight:bold;
+    text-align:center;
+    line-height:170%;
+  }
+  .odd
+  {
+    float:left;
+  }

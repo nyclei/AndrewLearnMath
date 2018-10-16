@@ -212,6 +212,34 @@ var SampleApp = function() {
               res.send();
           }
 
+          self.routes['/double-multi-horizontal'] = function(req, res) {
+            var num = req.param('num');
+            res.setHeader('Content-Type', 'text/html');
+            res.write('<html>')
+            res.write(outputHead());
+            res.write('<body>');
+            res.write('<div class=singleItem >');
+            res.write(doubleMath.horizontal(num, null, 'div'));
+            res.write('</div>');
+            res.write('</body>');
+            res.write('</html>');
+            res.send();
+          }
+
+          self.routes['/double-multi-vertical'] = function(req, res) {
+              var num = req.param('num');
+              res.setHeader('Content-Type', 'text/html');
+              res.write('<html>')
+              res.write(outputHead());
+              res.write('<body>');
+              res.write("<div class='main'>");
+              res.write(doubleMath.vertical2_1(num, '', 'x'));
+              res.write('</div>');
+              res.write('</body>');
+              res.write('</html>');
+              res.send();
+         }
+
     };
 
 
@@ -277,5 +305,3 @@ function outputHead () {
 var app = new SampleApp();
 app.initialize();
 app.start();
-
-
